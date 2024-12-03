@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { Inter: ["Inter", "sans-serif"] },
+          fontFamily: { Poppins: ["Poppins", "serif"] },
+          colors: {
+            g: "#20DC49",
+          },
+        },
+      },
+    };
+</script>
+  <title>Login Page</title>
+</head>
+<body class="flex flex-col lg:flex-row h-screen">
+    <!-- Left Part -->
+    <div class="w-full lg:w-3/5 bg-gray-100 p-10 flex flex-col justify-center">
+      <div class="flex items-center">
+        <div class="flex space-x-4 text-xl">
+          <img src="https://i.postimg.cc/tTH4Ny3d/Group-433.png" class="h-[29.49px]">
+          <h1 class="font-Inter font-medium h-[16.93px]">logo here</h1>
+        </div>
+        <h1 class="ml-auto font-Poppins font-light text-gray-500 text-sm lg:text-base">
+          Don’t have an account? 
+          <a href="" class="text-g">Sign up!</a>
+        </h1>
+      </div>
+  
+      <h1 class="text-3xl lg:text-4xl font-Poppins font-semibold mb-4 text-center mt-16 lg:mt-[150px]">Welcome Back!</h1>
+      <h2 class="text-lg lg:text-xl font-Poppins font-normal text-gray-600 mb-6 text-center">
+        login into your account
+      </h2>
+  
+      <form class="space-y-6 w-full max-w-sm mx-auto flex flex-col items-start">
+        <div class="w-full">
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="Email" 
+            class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+        </div>
+        <div class="relative w-full">
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Password" 
+            class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+          <button 
+            type="button" 
+            id="togglePassword" 
+            class="absolute inset-y-0 right-4 text-gray-500"
+          >
+            👁️
+          </button>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input 
+            type="checkbox" 
+            id="remember" 
+            class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+          >
+          <label for="remember" class="font-Poppins font-normal text-gray-700">Remember me</label>
+        </div>
+        <button type="submit" class="w-full border border-gray-400 font-Poppins font-normal text-gray-700 py-2 px-6 rounded-md hover:bg-gray-100 transition">
+          Log In
+        </button>
+      </form>
+    </div>
+  
+    <!-- Right Part -->
+    <div class="w-full lg:w-2/5 relative">
+      <img 
+        src="https://i.postimg.cc/PxQ4yXw1/linkedin-sales-solutions-B-DJO2-K22-M-unsplash-1.png" 
+        alt="Background" 
+        class="w-full h-48 lg:h-full object-cover"
+      >
+      <div class="absolute bottom-10 left-10 right-10 bg-white bg-opacity-70 backdrop-blur-md p-6 rounded-lg shadow-lg">
+        <div class="flex items-center mb-4">
+          <div class="bg-green-500 text-white px-3 py-1 rounded-md text-sm font-Poppins font-normal mr-2">
+            👍 Top Notch Stock Resources
+          </div>
+        </div>
+        <p class="text-gray-700 font-Poppins font-normal text-sm lg:text-base">
+          Today, we create innovative solutions to the<br> challenges that consumers face in both their<br> everyday lives and events.
+        </p>
+      </div>
+    </div>
+  </body>

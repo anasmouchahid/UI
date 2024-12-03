@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { Inter: ["Inter", "sans-serif"] },
+          fontFamily: { Poppins: ["Poppins", "serif"] },
+          colors: {
+            g: "#20DC49",
+          },
+        },
+      },
+    };
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex font-sans">
+
+  
+  <div class="w-2/5 bg-cover bg-center relative" style="background-image: url('https://i.postimg.cc/VsKKSFPg/aranprime-5p-QZUa5-W-0-I-unsplash-1.png');">
+    
+    <div class="absolute top-4 left-4">
+        <div class="flex space-x-4 text-xl">
+            <img src="https://i.postimg.cc/tTH4Ny3d/Group-433.png" class="h-[29.49px]">
+            <h1 class="font-Inter font-medium h-[16.93px]">logo here</h1>
+          </div>
+    </div>
+
+    
+    <div class="absolute inset-y-0 left-4 flex flex-col justify-center space-y-6">
+      
+      <div class="flex items-center space-x-4 bg-lime-500 p-4 shadow-md rounded-full">
+        <img src="https://i.postimg.cc/G2WGY9zc/Vector-5.png" alt="Image" class="h-[19.44px]">
+        <span class="text-black font-medium">Royal Stock Images</span>
+      </div>
+      
+      <div class="items-center backdrop-blur-xl  p-4 shadow-xl rounded-lg">
+        <div class="w-[47.71px] h-[43.24px] bg-black rounded-lg">
+            <img src="https://i.postimg.cc/wTdDjy72/microscope.png" alt="Image" class="h-[26.87px] pl-[15px] pt-[8px]">
+        </div>
+        <span class="text-white font-medium">Best Stock Photos and<br> Videos from across the<br> internet.Second Box Text</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="w-3/5 bg-gray-50 flex flex-col justify-between p-8">
+    
+    <h1 class="ml-auto font-Poppins font-light text-gray-500 text-sm lg:text-base">
+        Don’t have an account? 
+        <a href="" class="text-lime-500">Sign up!</a>
+      </h1>
+
+    
+    <div class="max-w-md mx-auto">
+      
+      <h1 class="text-2xl font-bold text-gray-800 text-center">Get Started With MAKER</h1>
+      <h2 class="text-lg text-gray-600 mt-2 text-center">Getting started is easy</h2>
+
+      
+      <form class="space-y-4 mt-6">
+        <input type="text" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="email" placeholder="Enter Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <div class="relative">
+          <input id="password" type="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="button" onclick="togglePassword('password')" class="absolute inset-y-0 right-3 flex items-center text-gray-500">
+            👁️
+          </button>
+        </div>
+        <div class="relative">
+          <input id="confirm-password" type="password" placeholder="Confirm Password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="button" onclick="togglePassword('confirm-password')" class="absolute inset-y-0 right-3 flex items-center text-gray-500">
+            👁️
+          </button>
+        </div>
+
+        
+        <button type="submit" class="w-full py-3 bg-lime-500 text-white rounded-lg  transition">
+          Create Account
+        </button>
+      </form>
+    </div>
+
+    
+    <div class="text-center text-gray-500 text-sm">
+        By continuing you indicate that you read and agreed to the Terms of Use
+    </div>
+  </div>
+
+  <script>
+    function togglePassword(inputId) {
+      const input = document.getElementById(inputId);
+      const type = input.type === "password" ? "text" : "password";
+      input.type = type;
+    }
+  </script>
+
+</body>
+</html>
